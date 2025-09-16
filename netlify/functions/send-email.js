@@ -32,10 +32,10 @@ exports.handler = async function (event, context) {
   
   try {
     // We send the email using the secure Node.js SDK
-    await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, {
-      publicKey: PUBLIC_KEY,
-      privateKey: PRIVATE_KEY,
-    });
+    // THIS IS THE NEW, CORRECT CODE
+await emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, {
+  privateKey: PRIVATE_KEY,
+});
 
     // Return a success message to the frontend
     return {
