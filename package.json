@@ -1,0 +1,7 @@
+{
+  "name": "netlify-email-function",
+  "version": "1.0.0",
+  "dependencies": {
+    "@emailjs/nodejs": "^2.2.0"
+  }
+}
